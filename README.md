@@ -7,4 +7,4 @@
 4、泛型 
 5、高阶函数与Lambda表达式
 
-![Image text](https://github.com/qq373036876/repositpry/master/img-folder/koltindemo01.png)
+![Image text](https://github.com/qq373036876/img-folder/blob/master/koltindemo01.png)
