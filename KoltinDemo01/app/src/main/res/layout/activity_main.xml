@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="I am Koltin"
+        android:background="@color/colorAccent"
+        android:textSize="32sp" />
+
+
+    <!--  三个textview 布局  -->
+
+    <TextView
+        android:id="@+id/tab1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:text="Tab1"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tab2" />
+
+
+    <TextView
+        android:id="@+id/tab2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#A67"
+        android:gravity="center"
+        android:text="Tab2"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintLeft_toRightOf="@id/tab1"
+        app:layout_constraintRight_toLeftOf="@id/tab3" />
+
+
+    <TextView
+        android:id="@+id/tab3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="Tab3"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintLeft_toRightOf="@id/tab2"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <!--  三个textview 布局  -->
+
+    <TextView
+        android:id="@+id/tab4"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#A67"
+        android:gravity="center"
+        android:text="Tab4"
+        app:layout_constraintTop_toBottomOf="@id/tab1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tab5" />
+
+
+    <TextView
+        android:id="@+id/tab5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="Tab5"
+        app:layout_constraintTop_toBottomOf="@id/tab2"
+        app:layout_constraintLeft_toRightOf="@id/tab4"
+        app:layout_constraintRight_toLeftOf="@id/tab6" />
+
+
+    <TextView
+        android:id="@+id/tab6"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:text="Tab6"
+        app:layout_constraintTop_toBottomOf="@id/tab3"
+        app:layout_constraintLeft_toRightOf="@id/tab5"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
