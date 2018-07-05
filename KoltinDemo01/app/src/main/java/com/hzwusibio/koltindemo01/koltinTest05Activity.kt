@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.TextView
 
 /**
  * koltin 高阶函数与Lambda表达式
@@ -12,6 +14,7 @@ import android.util.Log
  */
 class koltinTest05Activity : Activity() {
 
+    var mTextView01: TextView? = null
 
     companion object {
         fun start(context: Activity) {
@@ -24,10 +27,23 @@ class koltinTest05Activity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_koltin_test05)
 
-
         // 高阶函数
         // 将函数作为参数值传入高阶函数， 需要在函数名前加两个冒号（：：）作为标记
         processProduct("中国", ::mobilePhoneArea)
+
+        mTextView01 = findViewById(R.id.text01) as TextView
+
+        // Lambda表达式 以下两种是一样的，但是使用 Lambda 更加简洁
+        mTextView01?.setOnClickListener { view ->
+
+//            koltinTest01Activity.Companion.start(this) // Java调koltin 中间加Companion
+        }
+
+        mTextView01?.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(p0: View?) {
+
+            }
+        })
     }
 
     fun mobilePhoneArea(name : String):String {
@@ -46,5 +62,8 @@ class koltinTest05Activity : Activity() {
     // 也就是一 个没有声明的函数，但是可以作为表达式传递出去
 //    max(strings , { a , b - > a.length < b.length }) 等价于 如下代码
     fun compare(a: String, b: String): Boolean = a.length < b.length
+
+
+
 
 }
