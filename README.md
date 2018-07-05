@@ -6,3 +6,5 @@
 3、数据类
 4、泛型 
 5、高阶函数与Lambda表达式
+
+![Image text](https://raw.github.com/yourName/repositpry/master/yourprojectName/img-folder/koltindemo01.png)
